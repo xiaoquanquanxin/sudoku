@@ -7,47 +7,199 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        #wrap {
+        #wrap, #wrap * {
             display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap, ul {
             flex-direction: column;
         }
 
-        section {
-            display: flex;
+        section, li {
             flex-direction: row;
         }
 
         section div {
             box-sizing: border-box;
-            border: 1px solid;
-            width: 60px;
-            height: 60px;
+            border: 1px solid grey;
+            width: 50px;
+            height: 50px;
             text-align: center;
-            line-height: 60px;
+            line-height: 50px;
+            justify-content: center;
+        }
+
+        ul{
+            border: 1px solid ;
         }
     </style>
 </head>
 <body>
-<div id="wrap"></div>
-
-<script>
-    function createElement(tagName, i, j) {
-        const el = document.createElement(tagName);
-        if (tagName === 'div' && i !== undefined && j !== undefined) {
-            el.innerHTML = `${i + 1}行${j + 1}列`;
-        }
-        return el
-    }
-
-    for (let i = 0; i < 9; i++) {
-        const section = createElement('section');
-        for (let j = 0; j < 9; j++) {
-            const div = createElement('div', i, j);
-            section.appendChild(div);
-        }
-        wrap.appendChild(section);
-    }
-
-</script>
+<div id="wrap">
+    <section>
+        <ul>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <ul>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <ul>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+            <li>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </li>
+        </ul>
+    </section>
+</div>
+<script src="data.js"></script>
+<script src="utils.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
